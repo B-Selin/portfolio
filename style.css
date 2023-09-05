@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F2F2F2;
+}
+
+.skewedBox {
+  background: #BFBFBF;
+  padding: 30vmin 0;
+  transform: skew(0deg, -15deg);
+}
+
+.skewedBox2 {
+  background: #8C8C8C;
+  padding: 40vmin 0;
+  transform: skew(0deg, -15deg);
+}
+
+.container {
+  padding: 150px 200px;
+  transform: skew(0deg, 15deg);
+}
+
+.container2 {
+  align-content: right;
+  padding: 150px 200px;
+  transform: skew(0deg, 15deg);
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #404040;
+  position: relative;
+  z-index: 1;
+}
+
+.topnav #myLinks {
+  align-items: center;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #464c4a;
+  color: white;
+}
