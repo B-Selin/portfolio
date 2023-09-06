@@ -94,7 +94,8 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #404040;
-  position: relative;
+  width: 100%;
+  position: fixed;
   padding: 1vw;
   z-index: 1;
 }
@@ -108,7 +109,7 @@ body {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 .topnav a.icon {
@@ -124,6 +125,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .sticky+.content {
