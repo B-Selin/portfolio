@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Sonner-af-Vinden-|-Website-redesign-1-hex { color: #F2F2F2; }
+.Sonner-af-Vinden-|-Website-redesign-2-hex { color: #BFBFBF; }
+.Sonner-af-Vinden-|-Website-redesign-3-hex { color: #8C8C8C; }
+.Sonner-af-Vinden-|-Website-redesign-4-hex { color: #404040; }
+.Sonner-af-Vinden-|-Website-redesign-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Sonner-af-Vinden-|-Website-redesign-1-rgba { color: rgba(242, 242, 242, 1); }
+.Sonner-af-Vinden-|-Website-redesign-2-rgba { color: rgba(191, 191, 191, 1); }
+.Sonner-af-Vinden-|-Website-redesign-3-rgba { color: rgba(140, 140, 140, 1); }
+.Sonner-af-Vinden-|-Website-redesign-4-rgba { color: rgba(63, 63, 63, 1); }
+.Sonner-af-Vinden-|-Website-redesign-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Sonner-af-Vinden-|-Website-redesign-1-hsla { color: hsla(0, 0, 95, 1); }
+.Sonner-af-Vinden-|-Website-redesign-2-hsla { color: hsla(0, 0, 75, 1); }
+.Sonner-af-Vinden-|-Website-redesign-3-hsla { color: hsla(0, 0, 55, 1); }
+.Sonner-af-Vinden-|-Website-redesign-4-hsla { color: hsla(0, 0, 25, 1); }
+.Sonner-af-Vinden-|-Website-redesign-5-hsla { color: hsla(0, 0, 5, 1); }
