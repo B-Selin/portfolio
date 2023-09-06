@@ -46,21 +46,19 @@
         <div class="about-text">
           <h3><strong>Selin of all trades, master of some...</strong></h3>
           <p>Hi! My name is Selin.</p>
-          <p>I'm a software developer with a passion for creating innovative and user-friendly applications. </p>
+          <p>I'm a <span id="typewriter-text"></span></p>
+
+
           <p>When I'm not busy coding, you
             can often find me exploring new horizons on my motorcycle, feeling the wind in my hair and bugs on my
             helmet... Or
             baking. </p>
-          <p> I'm an astronomy nerd. I like coffee, dogs, pizza and The Office. I don't like people who don't let you
+          <p> I like coffee, dogs, pizza and The Office. I don't like people who don't let you
             get off the train before
             stepping in.</p>
         </div>
       </div>
     </div>
-
-
-
-
 
   </section>
 
@@ -75,19 +73,30 @@
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
           <img src="Celestre.jpg" style="width:100%">
-          <div class="text">Celestre</div>
+          <div class="details">
+            <h3>Celestre</h3>
+            <p>MERN Stack app for astrophotographers and astronomy enthusiast to discover, utilizing NASA API with MVC
+              patterns</p>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
           <img src="LeBlanc Recipes.jpg" style="width:100%">
-          <div class="text">LeBlanc Family Recipes</div>
+          <div class="details">
+            <h3>LeBlanc Family Recipes</h3>
+            <p>MEN Stack web app for creating and searching recipes, utilizing MongoDB and Google OAuth</p>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
           <img src="WoofAndWander.jpg" style="width:100%">
-          <div class="text">Woof&Wonder</div>
+          <div class="details">
+            <h3>Woof&Wonder</h3>
+            <p>A Full stack app allowing users to find and review pet-friendly establishments, implemented Django models
+              and views, utilizing Google Maps API, PostgreSQL and AWS S3</p>
+          </div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -169,5 +178,48 @@
 
   // Call showSlides with the initial slideIndex to display the first slide
   showSlides(slideIndex);
+
+
+  const typewriterTextElement = document.getElementById("typewriter-text");
+
+  const textsToAnimate = [
+    "software developer",
+    "motorcycle instructor",
+    "sourdough baker",
+    "astronopmy nerd"
+  ];
+
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function animateText() {
+    const currentText = textsToAnimate[textIndex];
+    const currentChar = currentText.charAt(charIndex);
+
+    if (!isDeleting) {
+      typewriterTextElement.textContent += currentChar;
+      charIndex++;
+    } else {
+      typewriterTextElement.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+    }
+
+    if (charIndex === currentText.length + 1) {
+      isDeleting = true;
+    }
+
+    if (charIndex === 0 && isDeleting) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % textsToAnimate.length;
+    }
+
+    const speed = isDeleting ? 80 : 150;
+    setTimeout(animateText, speed);
+  }
+
+  animateText();
+
+
 
 </script>
