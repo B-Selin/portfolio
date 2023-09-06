@@ -11,7 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script> src = "script.js"</script>
+  <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -21,6 +22,7 @@
 
   <nav class="topnav" id="navbar">
     <div id="myLinks">
+      <a>Selin Bozkurt | Developer</a>
       <a href="#about">About Me</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -66,25 +68,25 @@
   <section class="skewedBox2" id="projects">
     <!-- List your projects here -->
     <div class="container">
-      <p>My Projects</p>
+
       <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="APOD.png" style="width:100%">
+          <img src="Celestre.jpg" style="width:100%">
           <div class="text">Celestre</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="LandingPage.png" style="width:100%">
+          <img src="LeBlanc Recipes.jpg" style="width:100%">
           <div class="text">LeBlanc Family Recipes</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="Cappadocia.jpg" style="width:100%">
+          <img src="WoofAndWander.jpg" style="width:100%">
           <div class="text">Woof&Wonder</div>
         </div>
 
@@ -128,3 +130,44 @@
 </body>
 
 </html>
+
+
+<script>
+  // Initialize slideIndex at the beginning of your script
+  let slideIndex = 1;
+
+  // Rest of your code
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    slideIndex = n; // Set slideIndex to the selected slide
+    showSlides(slideIndex); // Call showSlides with the updated slideIndex
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+  // Call showSlides with the initial slideIndex to display the first slide
+  showSlides(slideIndex);
+
+</script>
