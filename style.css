@@ -13,7 +13,6 @@ h2 {
 
 footer {
   background: #F2F2F2;
-  transform: skew(0deg, -10deg);
   margin-top: 10vw;
   margin-bottom: 0;
   padding: 0;
@@ -23,8 +22,7 @@ footer p {
   text-align: center;
   background-color: #F2F2F2;
   color: #404040;
-  font-size: 1vw;
-  transform: skew(0deg, 10deg);
+  font-size: 1.5vmin;
 }
 
 @keyframes blink {
