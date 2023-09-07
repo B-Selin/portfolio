@@ -44,7 +44,7 @@ footer p {
 .skewedBox {
   background: #BFBFBF;
 
-  padding: 10vw 0;
+  padding: 5vw 0;
   transform: skew(0deg, -10deg);
 }
 
