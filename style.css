@@ -7,7 +7,21 @@ body {
   font-size: 1vw;
 }
 
+footer {
+  background: #F2F2F2;
+  transform: skew(0deg, -10deg);
+  margin-top: 10vw;
 
+}
+
+footer p {
+  text-align: center;
+  background-color: #F2F2F2;
+  color: #404040;
+  font-size: 1vw;
+  margin-bottom: 0;
+  transform: skew(0deg, 10deg);
+}
 
 @keyframes blink {
   0% {
@@ -36,16 +50,22 @@ body {
 
 .skewedBox2 {
   background: #F2F2F2;
-  padding: 15vw 0;
+  padding: 5vw 0;
   transform: skew(0deg, -10deg);
 }
 
 .container {
+  text-align: center;
   padding: 5vw;
   transform: skew(0deg, 10deg);
 }
 
+.skewedBox3 {
+  background: #BFBFBF;
 
+  padding: 5vw 0;
+  transform: skew(0deg, -10deg);
+}
 
 /* CSS for About Me Section */
 .about-content {
@@ -74,7 +94,7 @@ body {
 
 
 /* CSS for Centering Contact Links */
-.skewedBox#contact {
+.skewedBox3#contact {
   display: flex;
   justify-content: center;
   /* Horizontally center content */
@@ -271,7 +291,7 @@ img {
 @media (max-width:1024px) {
 
   body,
-  .skewedBox#contact,
+  .skewedBox3#contact,
   .topnav a {
     font-size: 1.5vw;
   }
@@ -280,7 +300,7 @@ img {
 @media (max-width:768px) {
 
   body,
-  .skewedBox#contact,
+  .skewedBox3#contact,
   .topnav a {
     font-size: 2.0vw;
   }
@@ -289,7 +309,7 @@ img {
 @media (max-width:480px) {
 
   body,
-  .skewedBox#contact,
+  .skewedBox3#contact,
   .topnav a {
     font-size: 2.0vw;
   }
@@ -298,7 +318,7 @@ img {
 @media (max-width:280px) {
 
   body,
-  .skewedBox#contact,
+  .skewedBox3#contact,
   .topnav a {
     font-size: 1.5vw;
   }
