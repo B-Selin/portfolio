@@ -43,6 +43,13 @@ footer p {
   }
 }
 
+.skewedBox0 {
+  background: #F2F2F2;
+
+  padding: 5vw 0;
+  transform: skew(0deg, -10deg);
+}
+
 .skewedBox {
   background: #BFBFBF;
 
@@ -70,7 +77,8 @@ footer p {
 }
 
 /* CSS for About Me Section */
-.about-content {
+.about-content,
+.home-content {
   display: flex;
 
 
@@ -78,7 +86,8 @@ footer p {
   align-items: center;
 }
 
-.about-image {
+.about-image,
+.home-image {
   flex: 1;
   padding: 1vmin;
 
@@ -89,7 +98,13 @@ footer p {
   border-radius: 50%;
 }
 
-.about-text {
+.home-image img {
+  width: 35vw;
+  border-radius: 50%;
+}
+
+.about-text,
+.home-text {
   flex: 2;
   padding: 4vw;
 }
@@ -198,6 +213,7 @@ a .contact-text,
 
 img {
   vertical-align: middle;
+  padding: 0.5vw;
 }
 
 
